@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>نموذج كشف راتب - September, 2025</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --border-color: #000;
+        --section-bg: #f2f2f2;
+        --text-color: #000;
+        --page-padding: 12mm;
+        --table-width: 640px; /* Narrow like the screenshot */
+        --cell-height: 34px;
+        --title-size: 14px;
+      }
+
+      html, body {
+        height: 100%;
+        margin: 0;
+        color: var(--text-color);
+        font-family: "Cairo", Tahoma, Arial, sans-serif;
+        background: #fff;
+      }
+
+      /* Page setup for printing */
+      @page { size: A4; margin: var(--page-padding); }
+
+      .page {
+        min-height: calc(100vh - 2 * var(--page-padding));
+        padding: 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+      }
+
+      .sheet {
+        width: var(--table-width);
+        margin: 0 auto;
+      }
+
+      .payslip-title {
+        text-align: center;
+        font-weight: 700;
+        font-size: 16px;
+        margin: 0 0 8px 0;
+      }
+
+      table.payslip {
+        border-collapse: collapse;
+        width: 100%;
+        table-layout: fixed; /* ensures consistent narrow look */
+        border: 2px solid var(--border-color);
+      }
+
+      .payslip td,
+      .payslip th {
+        border: 1px solid var(--border-color);
+        padding: 6px 8px;
+        height: var(--cell-height);
+        vertical-align: middle;
+        font-size: 13px;
+        line-height: 1.2;
+        word-wrap: break-word;
+      }
+
+      .payslip thead th {
+        background: #fff;
+        text-align: center;
+        font-size: 13px;
+        font-weight: 700;
+        border-left-width: 2px;
+        border-right-width: 2px;
+      }
+
+      .section-row th {
+        background: var(--section-bg);
+        font-weight: 700;
+        text-align: center;
+      }
+
+      .label { text-align: right; }
+      .value { text-align: center; }
+
+      /* Amounts are easier to read LTR */
+      .amount {
+        direction: ltr;
+        text-align: left;
+        font-variant-numeric: tabular-nums;
+        white-space: nowrap;
+      }
+
+      .total-row th,
+      .total-row td {
+        font-weight: 700;
+      }
+
+      .spacer-row td { height: 8px; padding: 0; border: none; }
+
+      /* Small, rotated page id sample (optional) */
+      .page-id {
+        position: fixed;
+        left: 6mm;
+        top: 50%;
+        transform: rotate(-90deg) translateY(-50%);
+        transform-origin: left top;
+        font-size: 10px;
+        color: #666;
+      }
+
+      /* Print tweaks */
+      @media print {
+        body { background: #fff; }
+        .page-id { color: #999; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="sheet">
+        <div class="page-id">PS-25-09</div>
+
+        <h1 class="payslip-title">September, 2025</h1>
+
+        <table class="payslip" role="table" aria-label="نموذج كشف راتب">
+          <thead>
+            <tr>
+              <th colspan="2">&nbsp;</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Employee info -->
+            <tr>
+              <td class="label">الاسم</td>
+              <td class="value">—</td>
+            </tr>
+            <tr>
+              <td class="label">الموقع</td>
+              <td class="value">—</td>
+            </tr>
+            <tr>
+              <td class="label">رقم الموظف</td>
+              <td class="value amount">—</td>
+            </tr>
+            <tr>
+              <td class="label">الوظيفة</td>
+              <td class="value">—</td>
+            </tr>
+            <tr>
+              <td class="label">الإدارة</td>
+              <td class="value">—</td>
+            </tr>
+
+            <tr class="section-row">
+              <th colspan="2">البدلات</th>
+            </tr>
+
+            <tr>
+              <td class="label">حافز ثابت</td>
+              <td class="amount">0.00</td>
+            </tr>
+            <tr>
+              <td class="label">بدل النقل</td>
+              <td class="amount">160.00</td>
+            </tr>
+            <tr>
+              <td class="label">بدل الانتقال</td>
+              <td class="amount">100.83</td>
+            </tr>
+            <tr>
+              <td class="label">بدل السكن</td>
+              <td class="amount">160.00</td>
+            </tr>
+            <tr>
+              <td class="label">راتب أساسي</td>
+              <td class="amount">8,563.46</td>
+            </tr>
+            <tr>
+              <td class="label">بدل NG&amp;B</td>
+              <td class="amount">3,000.00</td>
+            </tr>
+            <tr>
+              <td class="label">بدل طبيعة عمل</td>
+              <td class="amount">0.00</td>
+            </tr>
+            <tr>
+              <td class="label">بدل أيام مناوبات/وجبات</td>
+              <td class="amount">0.00</td>
+            </tr>
+            <tr>
+              <td class="label">بدل مخاطرة</td>
+              <td class="amount">595.00</td>
+            </tr>
+            <tr>
+              <td class="label">بدل الشهر (أخرى)</td>
+              <td class="amount">0.00</td>
+            </tr>
+            <tr>
+              <td class="label">أخرى</td>
+              <td class="amount">0.00</td>
+            </tr>
+            <tr>
+              <td class="label">بدل إضافي (نثريات)</td>
+              <td class="amount">0.00</td>
+            </tr>
+            <tr>
+              <td class="label">حافز أمن وسلامة (بند)</td>
+              <td class="amount">1,000.00</td>
+            </tr>
+            <tr>
+              <td class="label">تعويضات</td>
+              <td class="amount">0.00</td>
+            </tr>
+            <tr>
+              <td class="label">بدل مسؤولية</td>
+              <td class="amount">1,000.00</td>
+            </tr>
+            <tr>
+              <td class="label">بدل سكن</td>
+              <td class="amount">0.00</td>
+            </tr>
+            <tr>
+              <td class="label">حافز سنوي</td>
+              <td class="amount">0.00</td>
+            </tr>
+            <tr>
+              <td class="label">حافز منصبين</td>
+              <td class="amount">0.00</td>
+            </tr>
+            <tr>
+              <td class="label">بدل حقل</td>
+              <td class="amount">0.00</td>
+            </tr>
+            <tr>
+              <td class="label">حافز حقل</td>
+              <td class="amount">0.00</td>
+            </tr>
+            <tr>
+              <td class="label">مكافأة أُخرى</td>
+              <td class="amount">0.00</td>
+            </tr>
+            <tr>
+              <td class="label">بدل الورديات</td>
+              <td class="amount">100.00</td>
+            </tr>
+
+            <tr class="total-row">
+              <td class="label">إجمالي الدخل</td>
+              <td class="amount">14,699.29</td>
+            </tr>
+
+            <tr class="section-row">
+              <th colspan="2">الخصومات</th>
+            </tr>
+
+            <tr>
+              <td class="label">حصة التأمينات الاجتماعية</td>
+              <td class="amount">670.00</td>
+            </tr>
+            <tr>
+              <td class="label">ضرائب</td>
+              <td class="amount">1,618.36</td>
+            </tr>
+            <tr>
+              <td class="label">سلف</td>
+              <td class="amount">129.28</td>
+            </tr>
+            <tr>
+              <td class="label">أقساط/قروض</td>
+              <td class="amount">0.00</td>
+            </tr>
+            <tr>
+              <td class="label">خصومات إدارية</td>
+              <td class="amount">0.00</td>
+            </tr>
+            <tr>
+              <td class="label">غياب/إجازات/استقطاعات أخرى</td>
+              <td class="amount">0.00</td>
+            </tr>
+            <tr>
+              <td class="label">خصم أية جهة خارجية/مساعدات</td>
+              <td class="amount">7.35</td>
+            </tr>
+            <tr class="total-row">
+              <td class="label">إجمالي الاستقطاعات</td>
+              <td class="amount">2,424.99</td>
+            </tr>
+
+            <tr class="total-row">
+              <td class="label">الصافي</td>
+              <td class="amount">12,274.30</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+  </body>
+</html>
