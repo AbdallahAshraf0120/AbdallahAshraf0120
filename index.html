@@ -42,13 +42,6 @@
         margin: 0 auto;
       }
 
-      .payslip-title {
-        text-align: center;
-        font-weight: 700;
-        font-size: 16px;
-        margin: 0 0 8px 0;
-      }
-
       table.payslip {
         border-collapse: collapse;
         width: 100%;
@@ -76,6 +69,11 @@
         border-right-width: 2px;
       }
 
+      .payslip thead th.right-blank {
+        background: #fff;
+        font-weight: 400;
+      }
+
       .section-row th {
         background: var(--section-bg);
         font-weight: 700;
@@ -96,6 +94,12 @@
       .total-row th,
       .total-row td {
         font-weight: 700;
+      }
+
+      .header-row th,
+      .header-row td {
+        font-weight: 700;
+        text-align: center;
       }
 
       .spacer-row td { height: 8px; padding: 0; border: none; }
@@ -123,39 +127,34 @@
       <div class="sheet">
         <div class="page-id">PS-25-09</div>
 
-        <h1 class="payslip-title">September, 2025</h1>
-
         <table class="payslip" role="table" aria-label="نموذج كشف راتب">
           <thead>
-            <tr>
-              <th colspan="2">&nbsp;</th>
+            <tr class="header-row">
+              <th>September, 2025</th>
+              <th class="right-blank">&nbsp;</th>
             </tr>
           </thead>
           <tbody>
             <!-- Employee info -->
             <tr>
               <td class="label">الاسم</td>
-              <td class="value">—</td>
+              <td class="value">أحمد أسامه حسن محمد مغوري</td>
             </tr>
             <tr>
               <td class="label">الموقع</td>
-              <td class="value">—</td>
+              <td class="value">أكتوبر - الحي التاسع</td>
             </tr>
             <tr>
               <td class="label">رقم الموظف</td>
-              <td class="value amount">—</td>
+              <td class="value amount">GS61775</td>
             </tr>
             <tr>
               <td class="label">الوظيفة</td>
-              <td class="value">—</td>
+              <td class="value">مهندس</td>
             </tr>
             <tr>
               <td class="label">الإدارة</td>
-              <td class="value">—</td>
-            </tr>
-
-            <tr class="section-row">
-              <th colspan="2">البدلات</th>
+              <td class="value">الإدارة العامة للصيانة</td>
             </tr>
 
             <tr>
@@ -175,19 +174,19 @@
               <td class="amount">160.00</td>
             </tr>
             <tr>
-              <td class="label">راتب أساسي</td>
+              <td class="label">حافز انتاج</td>
               <td class="amount">8,563.46</td>
             </tr>
             <tr>
-              <td class="label">بدل NG&amp;B</td>
+              <td class="label">NG&amp;B حافز دورية</td>
               <td class="amount">3,000.00</td>
             </tr>
             <tr>
-              <td class="label">بدل طبيعة عمل</td>
+              <td class="label">حافز فنيّة</td>
               <td class="amount">0.00</td>
             </tr>
             <tr>
-              <td class="label">بدل أيام مناوبات/وجبات</td>
+              <td class="label">بدل أيام مناوبات/وجبات المشرفات</td>
               <td class="amount">0.00</td>
             </tr>
             <tr>
@@ -195,7 +194,7 @@
               <td class="amount">595.00</td>
             </tr>
             <tr>
-              <td class="label">بدل الشهر (أخرى)</td>
+              <td class="label">المتفرغ عن آخر الشهر</td>
               <td class="amount">0.00</td>
             </tr>
             <tr>
@@ -203,7 +202,7 @@
               <td class="amount">0.00</td>
             </tr>
             <tr>
-              <td class="label">بدل إضافي (نثريات)</td>
+              <td class="label">غرامات</td>
               <td class="amount">0.00</td>
             </tr>
             <tr>
@@ -250,10 +249,6 @@
             <tr class="total-row">
               <td class="label">إجمالي الدخل</td>
               <td class="amount">14,699.29</td>
-            </tr>
-
-            <tr class="section-row">
-              <th colspan="2">الخصومات</th>
             </tr>
 
             <tr>
