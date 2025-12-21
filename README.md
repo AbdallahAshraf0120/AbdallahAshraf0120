@@ -1,12 +1,45 @@
-- 👋 Hi, I’m @AbdallahAshraf0120
-- 👀 I’m interested in Full stack Web Development...
-- 🌱 I’m currently learning larvel advanced ...
-- 💞️ I’m looking to collaborate on laravel Projects ...
-- 📫 How to reach me www.linkedin.com/in/abdallah-ashraf-75a578283
+# 👋 Hi, I'm Abdallah Ashraf
 
- ...
+🚀 **Full Stack Web Developer** specialized in **Laravel**
 
-<!---
-AbdallahAshraf0120/AbdallahAshraf0120 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+---
+
+## 👨‍💻 About Me
+- 👀 Passionate about building scalable and secure web applications  
+- 🌱 Currently deepening my knowledge in **Advanced Laravel** (Performance, Queues, Jobs, API, Security)  
+- 💡 Interested in clean code, best practices, and real-world problem solving  
+- 💞️ Open to collaborating on **Laravel & PHP projects**
+
+---
+
+## 🛠️ Tech Stack
+**Backend**
+- PHP, Laravel  
+- RESTful APIs  
+- MySQL  
+
+**Frontend**
+- HTML, CSS, JavaScript  
+- Bootstrap  
+
+**Tools & Concepts**
+- Git & GitHub  
+- MVC Architecture  
+- Authentication & Authorization  
+- Database Design  
+
+---
+
+## 📌 What I’m Looking For
+- 🤝 Collaboration on Laravel projects  
+- 🧠 Learning from real production-level applications  
+- 💼 Freelance or remote opportunities  
+
+---
+
+## 📫 Contact Me
+- 🔗 LinkedIn: [Abdallah Ashraf](https://www.linkedin.com/in/abdallah-ashraf-75a578283)
+
+---
+
+⭐ **Feel free to check my repositories and connect with me!**
